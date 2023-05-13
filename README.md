@@ -1,5 +1,4 @@
 # About-Me
-### A profile on an App Dev by the name of Ryan Hunter
 
 Ryan Hunter is an experienced Application Developer with a passion for creating innovative and user-friendly applications. He has an extensive background in software engineering and has been developing applications professionally for over a year.
 
