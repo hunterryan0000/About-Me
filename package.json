@@ -1,0 +1,22 @@
+{
+  "name": "about-me",
+  "version": "1.0.0",
+  "description": "Ryan Hunter is an experienced Application Developer with a passion for creating innovative and user-friendly applications. He has an extensive background in software engineering and has been developing applications professionally for over a year.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunterryan0000/About-Me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hunterryan0000/About-Me/issues"
+  },
+  "homepage": "https://github.com/hunterryan0000/About-Me#readme",
+  "devDependencies": {
+    "cypress": "^12.12.0"
+  }
+}
