@@ -422,8 +422,8 @@ body {
     }
   
     .custom-image {
-    width: 450px; /* or whatever size you want */
-    height: 200px; /* same as width for square images */
+    width: 100%; /* or whatever size you want */
+    /* height: 200px; same as width for square images */
     object-fit: cover; /* preserves aspect ratio and fills in the dimension */
     border-radius: 15px; /* rounded corners */
   }
@@ -434,8 +434,8 @@ body {
     @media screen and (max-width: 600px) {
   
       .custom-image {
-      width: 180px;  /* smaller width */
-      height: 80px; /* same as width for square images */
+      width: 100%;  /* smaller width */
+      /* height: 80px; same as width for square images */
       object-fit: cover; /* preserves aspect ratio and fills in the dimension */
       border-radius: 10px;  /* slightly less rounded edges */
     }

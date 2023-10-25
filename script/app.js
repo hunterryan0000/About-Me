@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', () =>{
     // Array containing filenames of images
 const imageNames = ["transferDetails.png", "viewTransfer.png"];
+const imageNames2 = ["transError.png", "transcript.png"];
 
 // Reference to the container where images will be appended
 const imageContainer = document.getElementById("dynamic-images-container");
+const imageContainer2 = document.getElementById("dynamic-images-container2");
 
 // Loop through each image name and create an img element
 imageNames.forEach((imageName) => {
@@ -17,6 +19,17 @@ imageNames.forEach((imageName) => {
   // Add image to container
   imageContainer.appendChild(imgElement);
 });
+imageNames2.forEach((imageName) => {
+    const imgElement = document.createElement("img");
+    imgElement.src = `./Bio/images/${imageName}`; // Adjust the path as per your directory structure
+    imgElement.alt = `${imageName} Screenshot`;
+    imgElement.loading = "lazy"; // For performance, images will load only when they enter the viewport
+    
+    imgElement.className = "custom-image";  // Add the custom CSS class
+  
+    // Add image to container
+    imageContainer2.appendChild(imgElement);
+  });
 
 
 //-------------------------------------------------------------------
