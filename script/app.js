@@ -2,10 +2,16 @@ document.addEventListener('DOMContentLoaded', () =>{
     // Array containing filenames of images
 const imageNames = ["transferDetails.png", "viewTransfer.png"];
 const imageNames2 = ["transError.png", "transcript.png"];
+const imageNames3 = ["holidayhotel.png", "holidayhotel3.png"];
+const imageNames4 = ["ramazon.png", "ramazon 2.png"];
+const imageNames5 = ["mealplanner1.png", "mealplanner2.png"];
 
 // Reference to the container where images will be appended
 const imageContainer = document.getElementById("dynamic-images-container");
 const imageContainer2 = document.getElementById("dynamic-images-container2");
+const imageContainer3 = document.getElementById("dynamic-images-container3");
+const imageContainer4 = document.getElementById("dynamic-images-container4");
+const imageContainer5 = document.getElementById("dynamic-images-container5");
 
 // Loop through each image name and create an img element
 imageNames.forEach((imageName) => {
@@ -29,6 +35,39 @@ imageNames2.forEach((imageName) => {
   
     // Add image to container
     imageContainer2.appendChild(imgElement);
+  });
+  imageNames3.forEach((imageName) => {
+    const imgElement = document.createElement("img");
+    imgElement.src = `./Bio/images/${imageName}`; // Adjust the path as per your directory structure
+    imgElement.alt = `${imageName} Screenshot`;
+    imgElement.loading = "lazy"; // For performance, images will load only when they enter the viewport
+    
+    imgElement.className = "custom-image";  // Add the custom CSS class
+  
+    // Add image to container
+    imageContainer3.appendChild(imgElement);
+  });
+  imageNames4.forEach((imageName) => {
+    const imgElement = document.createElement("img");
+    imgElement.src = `./Bio/images/${imageName}`; // Adjust the path as per your directory structure
+    imgElement.alt = `${imageName} Screenshot`;
+    imgElement.loading = "lazy"; // For performance, images will load only when they enter the viewport
+    
+    imgElement.className = "custom-image";  // Add the custom CSS class
+  
+    // Add image to container
+    imageContainer4.appendChild(imgElement);
+  });
+  imageNames5.forEach((imageName) => {
+    const imgElement = document.createElement("img");
+    imgElement.src = `./Bio/images/${imageName}`; // Adjust the path as per your directory structure
+    imgElement.alt = `${imageName} Screenshot`;
+    imgElement.loading = "lazy"; // For performance, images will load only when they enter the viewport
+    
+    imgElement.className = "custom-image";  // Add the custom CSS class
+  
+    // Add image to container
+    imageContainer5.appendChild(imgElement);
   });
 
 
